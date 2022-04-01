@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* color */
+  --color-white: #ffffff;
+  --color-base: #f4ebe6;
+  --color-button: #b68040;
+  --color-black: #000000;
+
+  /* size */
+  --size-font-menu: 16px;
+
+  /* font */
+  --font-italic: "Quincy Regular Italic";
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+header {
+  width: 100%;
+}
+
+.header__upper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: var(--color-base);
+  height: 57px;
+  padding-right: 5vw;
+}
+
+.header__upper__text1,
+.header__upper__text2 {
+  font-family: var(--font-italic);
+  font-size: var(--size-font-menu);
+  margin-right: 1.5%;
+  letter-spacing: 0.15em;
+}
+
+.header__upper__iconfacebook,
+.header__upper__iconinstargram,
+.header__upper__iconpinterest {
+  margin-left: 0.5%;
+}
+
+.header__under__content1 {
+  font-family: var("Quincy Regular");
+}
+
+.header__under__content2,
+.header__under__content3,
+.header__under__content4,
+.header__under__content5,
+.header__under__blog,
+.header__under__freebies {
+  font-family: "Ramaraja", serif;
+  font-size: var(--size-font-menu);
+}
