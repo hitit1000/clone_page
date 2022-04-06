@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* color */
+  --color-white: #ffffff;
+  --color-base: #f4ebe6;
+  --color-button: #b68040;
+  --color-black: #000000;
+  --color-underbar: #f6eeec;
+
+  /* size */
+  --size-font-menu: 16px;
+}
+
+body {
+  transform-origin: left top;
+  transform: scale(1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+header {
+  width: 100%;
+  height: 135px;
+  border-bottom: 1px solid var(--color-underbar);
+}
+
+.upper {
+  background-color: var(--color-base);
+  height: 42%;
+}
+
+.upper__box {
+  width: calc(1215px + calc(calc(100% - 1215px) * 0.45));
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  letter-spacing: 0.1em;
+  font-size: var(--size-font-menu);
+  text-align: right;
+  font-family: "Brygada 1918", serif;
+  font-style: italic;
+}
+
+.upper__box__content1,
+.upper__box__content2 {
+  padding: 0px 16px;
+}
+
+.upper__box__content4,
+.upper__box__content5,
+.upper__box__content3 {
+  padding: 0px 4px;
+}
+
+.under {
+  width: 100%;
+  height: 58%;
+}
+
+.under__box {
+  width: calc(1215px + calc(calc(100% - 1215px) * 0.45));
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.under__box__content1 {
+  width: 87px;
+  height: 79px;
+  background-color: var(--color-button);
+}
+
+.box__content__menu {
+  width: 100%;
+  height: 100%;
+  padding: 25px 10px;
+  text-align: center;
+  color: white;
+}
+.under__box__content2 {
+  height: 100%;
+}
+
+.box__content__logo {
+  padding: 10px;
+  height: 100%;
+  border-right: 1px solid var(--color-underbar);
+}
+
+.box__content__logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.under__box__content3 {
+  font-family: "Brygada 1918", serif;
+  color: var(--color-button);
+  letter-spacing: 0.25em;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.under__box__content4,
+.under__box__content5,
+.under__box__content6,
+.under__box__content7,
+.under__box__content8,
+.under__box__content9 {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.05em;
+  font-size: var(--size-font-menu);
+  padding: 0px 12px;
+}
+
+.under__box__content8 {
+  border-left: 1px solid black;
+}
+.under__box__right {
+  margin-left: auto;
+}
+
+.mobile__header {
+  display: none;
+}

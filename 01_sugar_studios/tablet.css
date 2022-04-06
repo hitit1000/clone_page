@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* color */
+  --color-white: #ffffff;
+  --color-base: #f4ebe6;
+  --color-button: #b68040;
+  --color-black: #000000;
+  --color-underbar: #f6eeec;
+
+  /* size */
+  --size-font-menu: 16px;
+}
+
+header {
+  width: 100%;
+}
+
+.upper__box {
+  width: 100%;
+}
