@@ -16,8 +16,10 @@
   --size-font-menu: 16px;
 }
 
-.upper {
-  display: none;
+header {
+  width: 100%;
+  height: 257px;
+  border-bottom: 5px solid var(--color-underbar);
 }
 
 .under,
@@ -28,14 +30,65 @@
 .mobile__header {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
 .moblie__header__upper {
   display: flex;
+  height: 35%;
+}
+
+.mobile__header__under {
+  height: 65%;
+}
+
+.mobile__header__logo {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.mobile__header__logo > img {
+  height: 100%;
+  object-fit: fill;
 }
 
 .mobile__header__content2 {
   display: flex;
 }
+
 .mobile__header__content1 {
+  width: 129px;
+  height: 88px;
+  background-color: var(--color-button);
+}
+
+.mobile__header__menu {
+  width: 100%;
+  height: 100%;
+  padding: 25px 10px;
+  text-align: center;
+  color: white;
+}
+
+.mobile__header__content2 {
+  width: 100%;
+  background-color: var(--color-underbar);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.mobile__header__text {
+  font-family: "Brygada 1918", serif;
+  letter-spacing: 0.1em;
+  font-size: calc(var(--size-font-menu) * 2);
+  padding-left: 20px;
+}
+.mobile__header__icon {
+  width: 95px;
+  height: 95px;
+  padding-top: 30px;
+  text-align: center;
 }
