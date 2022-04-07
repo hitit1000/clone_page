@@ -3,6 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 400px;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
 /* header */
 header {
@@ -14,8 +25,13 @@ header {
 header a {
   text-decoration: none;
   color: black;
-  padding: 0px 10px;
+  padding: 0px 8px;
   font-size: 14px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
 }
 
 header a:hover {
@@ -57,6 +73,7 @@ header button:hover {
   max-height: 290px;
   width: 400px;
   height: 290px;
+  /* height: calc(100% - 560px); */
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -64,4 +81,48 @@ header button:hover {
 }
 .logo__box {
   text-align: center;
+}
+
+/* search */
+
+.search {
+  padding: 20px;
+  max-height: 160px;
+}
+
+.search__box {
+  margin: 0 auto;
+  width: auto;
+  height: 44px;
+  max-width: 584px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.search__box:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  /* border: none; */
+}
+
+.search__box input {
+  border: none;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  height: 34px;
+  flex: 100%;
+  font-size: 16px;
+}
+
+.search__box .icon1,
+.search__box .icon2 {
+  padding: 0px 15px;
+  color: gray;
+}
+
+.search__box .icon3 {
+  padding-right: 20px;
+  color: rgb(46, 130, 163);
 }
