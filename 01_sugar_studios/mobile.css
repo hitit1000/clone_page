@@ -92,3 +92,24 @@ header {
   padding-top: 30px;
   text-align: center;
 }
+
+.article__section1 {
+  width: 784px;
+  height: auto;
+  align-items: center;
+  /* background-color: skyblue; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.article__section1__box1,
+.article__section1__box3 {
+  display: none;
+}
+
+.article__section1__box2,
+.article__section1__box4 {
+  display: flex;
+  width: 100%;
+}
