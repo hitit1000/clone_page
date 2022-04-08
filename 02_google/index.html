@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
     <script defer src="https://kit.fontawesome.com/e8d6eff04d.js" crossorigin="anonymous"></script>
+    <script defer src="./index.js"></script>
     <title>Google</title>
+    <link rel="shortcut icon" href="./images/google.png" type="image/x-icon" />
   </head>
   <body>
     <div class="container">
@@ -24,15 +26,22 @@
       </main>
       <section class="search">
         <div class="search__box">
-          <div class="icon1"><i class="fa-solid fa-magnifying-glass"></i></div>
-          <input type="text" />
-          <div class="icon2"><i class="fa-solid fa-keyboard"></i></div>
-          <div class="icon3"><i class="fa-solid fa-microphone"></i></div>
+          <a href="#" class="icon1"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <input type="text" class="search__input" />
+          <a href="#" class="iconx"><i class="fa-solid fa-xmark"></i></a>
+          <a href="#" class="icon2"><i class="fa-solid fa-keyboard"></i></a>
+          <a href="#" class="icon3"><i class="fa-solid fa-microphone"></i></a>
         </div>
-        <div class="search__links"><a href="#">Google 검색</a><a href="#">I'm Feeling Lucky</a></div>
+        <div class="search__links"><button>Google 검색</button><button>I'm Feeling Lucky</button></div>
       </section>
-      <section class="btns"></section>
-      <footer></footer>
+      <section class="space"></section>
+      <footer>
+        <section class="footer__top"><div class="country">대한민국</div></section>
+        <section class="footer__bottom">
+          <div class="footer__bottom__1"><a href="#">광고</a><a href="#">비즈니스</a><a href="#">검색의 원리</a></div>
+          <div class="footer__bottom__2"><a href="#">개인정보처리방침</a><a href="#">약관</a><a href="#">설정</a></div>
+        </section>
+      </footer>
     </div>
   </body>
 </html>
