@@ -22,12 +22,21 @@
   --size-font-text_m: 13px;
   --size-font-text_s: 13px;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* section1 */
 .section1 {
   width: 100%;
   background: linear-gradient(#ddebe3 60%, transparent 40%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 42px;
 }
 
 .section1__title {
@@ -78,6 +87,72 @@
 
 .section1__contents > div {
   padding: 9px 30px;
+}
+
+/* section2 */
+.section2 {
+  width: 100%;
+  max-width: 1400px;
+}
+
+.section2 > .section2__header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0px 0px 12px;
+  padding: 0px 48px;
+}
+.section2 > .section2__header > h2 {
+  font-size: var(--size-font-text);
+}
+.section2 > .section2__header > div {
+  font-size: var(--size-font-text_m);
+}
+.section2 > .section2__header > div > a {
+  text-decoration: underline;
+}
+
+.section2 > .section2__contents {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 36px;
+}
+.section2 > .section2__contents > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 32px;
+}
+
+.section2 > .section2__contents > div > .content {
+  padding: 0px 9px;
+  border-radius: 6px;
+}
+
+.section2 > .section2__contents > div > .content > .imgbox > img {
+  width: 250px;
+  height: 168px;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.section2 > .section2__contents > div > .content > .imgbox > img:hover {
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
+}
+.section2 > .section2__contents > div > .content > p {
+  font-size: var(--size-font-text_m);
+  color: #258635;
+  border-radius: 25%;
+  margin-top: -34px;
+  margin-left: 6px;
+}
+
+.section2 > .section2__contents > div > .content > p > span {
+  background-color: var(--color-white);
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 6px 9px;
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
@@ -142,6 +217,14 @@
   .section1__contents > div:hover span {
     font-size: var(--size-font-text_m);
   }
+
+  /* section2 */
+  .section2 > .section2__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 24px;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 368px) {
@@ -170,5 +253,13 @@
   }
   .section1__contents > div:hover span {
     font-size: var(--size-font-text_m);
+  }
+
+  /* section2 */
+  .section2 > .section2__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 24px;
   }
 }
