@@ -1,0 +1,73 @@
+header {
+  position: fixed;
+  height: 66px;
+  width: 100%;
+}
+
+.headerBox {
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.headerBox a {
+  text-decoration: none;
+  color: #5d677a;
+}
+
+.headerBox > a {
+  width: 252px;
+  margin-right: 15px;
+}
+
+.headerBox > nav {
+  height: 100%;
+}
+
+.headerBox > nav > ul {
+  display: flex;
+  left: 0;
+  height: 100%;
+}
+
+.headerBox > nav > ul > li {
+  list-style: none;
+  padding: 20px 15px;
+  transition: 0.1s;
+}
+
+.headerBox > nav > ul > li > button {
+  font-size: 16px;
+  color: #5d677a;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.headerBox > .headerBox__menu {
+  margin-left: auto;
+}
+
+.headerBox > .headerBox__menu > a {
+  padding: 18px 0px;
+  transition: 0.1s;
+}
+
+.headerBox > .headerBox__menu > .job {
+  margin-right: 20px;
+  padding: 9px 20px;
+  border: 3px solid #2777b4;
+  border-radius: 5px;
+  color: #2777b4;
+}
+
+.headerBox > .headerBox__menu > span {
+  padding: 0px 5px;
+}
+
+/* effect */
+.h_underbar:hover {
+  border-bottom: 4px solid rgb(249, 181, 21);
+}
