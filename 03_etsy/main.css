@@ -210,6 +210,12 @@ main {
   border: 1px solid white;
 }
 
+.section2 .favoritesBox > img:active {
+  fill: red;
+  color: #258635;
+  background-color: #595959;
+}
+
 /* section3 */
 .section3 {
   width: 100%;
@@ -268,7 +274,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #FDEBD2 ;
+  background-color: #fdebd2;
   width: 100%;
   text-align: center;
 }
@@ -282,14 +288,14 @@ main {
   padding: 36px 54px;
 }
 
-.section5 > .section5__contents > h2{
+.section5 > .section5__contents > h2 {
   margin-bottom: 6px;
   font-size: 44px;
   line-height: 48px;
   font-weight: 400;
 }
 
-.section5> .section5__contents > .story {
+.section5 > .section5__contents > .story {
   font-size: var(--size-font-text_m);
   text-decoration: underline;
   transition: 200ms ease-out;
@@ -306,40 +312,40 @@ main {
   padding: 36px 0px;
 }
 
-.section5 > .section5__contents > .section5__contents__texts > div{
+.section5 > .section5__contents > .section5__contents__texts > div {
   flex: 1 1;
   text-align: left;
 }
-.section5 > .section5__contents > .section5__contents__texts > div:nth-child(2){
+.section5 > .section5__contents > .section5__contents__texts > div:nth-child(2) {
   margin: 0px 36px;
 }
 
-.section5 > .section5__contents > .section5__contents__texts > div >h3 {
+.section5 > .section5__contents > .section5__contents__texts > div > h3 {
   font-size: var(--size-font-subtitle);
   margin-bottom: 18px;
   line-height: 36px;
   letter-spacing: 1px;
 }
-.section5 > .section5__contents > .section5__contents__texts > div > p{
+.section5 > .section5__contents > .section5__contents__texts > div > p {
   font-size: 16px;
   line-height: 28px;
 }
 
-.section5 > .section5__contents > .section5__contents__texts > div > span{
+.section5 > .section5__contents > .section5__contents__texts > div > span {
   cursor: help;
-  font-size:var(--size-font-text);
+  font-size: var(--size-font-text);
   line-height: 28px;
   text-decoration: underline;
   text-decoration-style: dashed;
   text-underline-position: under;
 }
 .section5 > .section5__contents > h4 {
-  font-size:var(--size-font-maintitle_s);
+  font-size: var(--size-font-maintitle_s);
   line-height: 28px;
   margin-bottom: 18px;
 }
 .section5 > .section5__contents > .help {
-  font-size:var(--size-font-text);
+  font-size: var(--size-font-text);
   border: 2px solid var(--color-black);
   border-radius: 24px;
   font-weight: bold;
@@ -351,33 +357,141 @@ main {
   transition: 0.2s;
 }
 
-.section5 > .section5__contents > .help:hover{
+.section5 > .section5__contents > .help:hover {
   transform: scale(1.2);
-  
-  box-shadow: 1px 1px 27px 1px rgba(0, 0, 0, 0.5)
+
+  box-shadow: 1px 1px 27px 1px rgba(0, 0, 0, 0.5);
+}
+.section5 > .section5_down {
+  max-width: 1400px;
+  width: 100%;
+  height: 30px;
+  /* overflow: hidden; */
+  /* background-color: #fdebd2; */
+}
+
+.section5 > .section5_down > img {
+  width: auto;
+  height: 30px;
+  /* object-fit: fill; */
 }
 
 /* section6 */
-.section6{
+.section6 {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #D7E6F5;
+  background-color: #d7e6f5;
+  padding-top: 36px;
 }
 
-.section6_up{
-  max-width: 1400px;
+.section6 > .section6_contents {
+  padding-bottom: 36px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.section6 > .section6_contents > .section6_content1 {
+  line-height: 20px;
+  font-size: var(--size-font-text);
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.section6 > .section6_contents > .section6_content2 {
+  max-width: 480px;
+  margin: 0 auto;
+  height: 48px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--color-white);
+  border-radius: 96px;
+  box-shadow: 1px 2px 4px 0 rgb(34 34 34 / 10%) inset;
+}
+
+.section6 > .section6_contents > .section6_content2 > input {
+  padding-left: 18px;
+  border-top-left-radius: 96px;
+  border-bottom-left-radius: 96px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  box-shadow: none;
+  background: transparent;
+  flex: 1;
+
+  font-size: var(--size-font-text);
+  line-height: 28px;
+
+  border: 1px solid rgba(34, 34, 34, 0.15);
+  border-right: none;
+
+  outline: none;
+  padding: 9px 12px 9px 18px;
   width: 100%;
-  height: 30px;
-  overflow: hidden;
-
+  min-width: 0;
 }
 
-.section6 > .section6 > img{
+.section6 > .section6_contents > .section6_content2 > button {
+  background-color: transparent;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  text-decoration: none;
+  padding: 12px 21px 12px 15px;
+  font-weight: bold;
+  font-size: var(--size-font-text);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 96px;
+  border-bottom-right-radius: 96px;
+  border: 1px solid rgba(34, 34, 34, 0.15);
+  border-left: 0;
+  transition: all 200ms ease-out;
+}
 
-  overflow: hidden;
+.section6 > .section6_contents > .section6_content2 > button:hover {
+  background-color: rgba(34, 34, 34, 0.05);
+}
 
+.section6 > .section6_down {
+  width: 100%;
+  height: 24px;
+}
+
+.section6 > .section6_down > img {
+  width: 100%;
+  height: 24px;
+  transform: rotate(180deg);
+}
+
+/* section7 */
+
+.section7 {
+  width: 100%;
+  background: #4d6bc6;
+}
+
+.section7 > .section7__contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0px;
+  cursor: help;
+}
+
+.section7 > .section7__contents > .section7_content {
+  color: var(--color-white);
+  padding-left: 12px;
+  font-size: var(--size-font-text);
+  text-underline-position: under;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-align: center;
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px) {
@@ -532,6 +646,10 @@ main {
   .section3 > .section3__contents > li > a > div > span {
     font-size: var(--size-font-text_m);
   }
+  /* section7 */
+  .section7 > .section7__contents {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 368px) {
@@ -622,5 +740,9 @@ main {
   }
   .section3 > .section3__contents > li > a > div > span {
     font-size: var(--size-font-text_m);
+  }
+  /* section7 */
+  .section7 > .section7__contents {
+    flex-direction: column;
   }
 }
