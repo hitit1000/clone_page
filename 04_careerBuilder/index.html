@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find a job | CareerBuilder</title>
     <link rel="shortcut icon" href="./images/favicon.png" />
+    <script defer src="./index.js"></script>
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./header.css" />
   </head>
   <body>
     <header>
       <div class="headerBox">
-        <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+        <div class="logo">
+          <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+          <div class="headerBox__hamburger">
+            <button><img src="./images/hamburger.svg" alt="hamburger" /></button>
+          </div>
+        </div>
         <nav>
           <ul>
             <li class="h_underbar"><a href="#">Jobs</a></li>
             <li class="h_underbar"><a href="#">Upload/Build Resume</a></li>
             <li class="h_underbar">
               <div>
-                <button aria-expanded="false">Salaries & Advice ∨</button>
+                <button>Salaries & Advice ∨</button>
                 <ul>
                   <li><a href="#">Salary Search</a></li>
                   <li><a href="#">Career Advice</a></li>
@@ -36,7 +42,11 @@
           <span>|</span>
           <a href="#" class="h_underbar">Sign Up</a>
         </div>
+        <!-- <div class="headerBox__hamburger">
+          <button><img src="./images/hamburger.svg" alt="hamburger" /></button>
+        </div> -->
       </div>
     </header>
+    <main></main>
   </body>
 </html>

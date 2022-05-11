@@ -4,50 +4,107 @@
   box-sizing: border-box;
 }
 
-body {
+.headerBox > nav > ul {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
-.header {
-  background-color: red;
-  width: 100%;
-  height: 11vw;
+.headerBox > nav > ul > li {
+  list-style: none;
+  transition: 0.1s;
+  padding: 20px 0px;
+  margin: 0px 15px;
+  height: 66px;
 }
 
-.footer {
-  background-color: blue;
-  width: 100%;
-  height: 6vw;
-  margin-top: auto;
+.headerBox > nav > ul > li:nth-child(3):hover ul {
+  display: block;
 }
 
-.spann {
-  width: 100%;
-  color: red;
-  display: inline-block;
-  text-overflow: ellipsis;
+.headerBox > nav > ul > li > div > button {
+  font-size: 16px;
+  color: #5d677a;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.headerBox > nav > ul > li > div > ul {
+  display: none;
+  background-color: white;
+  box-shadow: rgb(46 46 46 / 50%) 0px 2px 14px;
+  list-style: none;
+  min-width: 230px;
+  position: absolute;
+  top: 66px;
+}
+
+.headerBox > nav > ul > li > div > ul > li {
+  height: 45px;
+  line-height: 45px;
   white-space: nowrap;
-  overflow: hidden;
-  background-color: antiquewhite;
-  border-radius: 15px;
-  padding: 5px 15px;
-}
-.divv {
-  background-color: aqua;
-  border-radius: 15px;
-  padding: 5px 15px;
-  /* max-width: auto; */
-  width: 20%;
-  /* text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden; */
+  cursor: pointer;
+  padding-left: 15px;
+  user-select: none;
+  transition: 0.3s;
 }
 
-/* .divvv {
-  width: 800px;
-  background-color: brown;
-} */
+.headerBox > nav > ul > li > div > ul > li:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.headerBox > nav > ul > li > div > ul > li:hover a {
+  color: rgb(39, 119, 180);
+}
+
+@media screen and (min-width: 0px) and (max-width: 1100px) {
+  .headerBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headerBox > nav,
+  .headerBox > .headerBox__menu {
+    /* display: none; */
+  }
+  .headerBox > .logo {
+    width: 100%;
+  }
+  .headerBox > .logo > .headerBox__hamburger {
+    display: block;
+  }
+
+  .headerBox > nav {
+    height: auto;
+  }
+
+  .headerBox > nav > ul {
+    flex-direction: column;
+  }
+
+  .headerBox > nav > ul > li {
+    padding: 15px;
+  }
+
+  .headerBox > nav > ul > li > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerBox > nav > ul > li > div > button {
+    text-align: left;
+  }
+
+  .headerBox > nav > ul > li > div > ul {
+    display: none;
+    box-shadow: none;
+    position: relative;
+    top: 0px;
+    padding-top: 15px;
+  }
+
+  /* effect */
+  .h_underbar:hover {
+    border-bottom: none;
+    border-left: 4px solid rgb(249, 181, 21);
+  }
+}

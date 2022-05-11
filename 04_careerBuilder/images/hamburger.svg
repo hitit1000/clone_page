@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="17px" viewBox="0 0 27 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon-hamburger</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-4" transform="translate(-328.000000, -33.000000)" fill="#4A4A4A">
+            <g id="icon-hamburger" transform="translate(328.000000, 33.000000)">
+                <rect id="Rectangle" x="0" y="0" width="27" height="2" rx="1"></rect>
+                <rect id="Rectangle-Copy-3" x="7" y="8" width="20" height="2" rx="1"></rect>
+                <rect id="Rectangle-Copy-3" x="17" y="15" width="10" height="2" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

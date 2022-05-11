@@ -1,13 +1,13 @@
 header {
   position: fixed;
-  height: 66px;
   width: 100%;
   color: #5d677a;
+  box-shadow: 0 2px 20px rgb(46 46 46 / 10%);
 }
 
 .headerBox {
   max-width: 1440px;
-  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   margin: 0px auto;
@@ -19,19 +19,39 @@ header {
   color: #5d677a;
 }
 
-.headerBox > a {
-  width: 252px;
-  height: auto;
+.headerBox > .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 66px;
+}
+
+.headerBox > .logo > a {
   margin-right: 10px;
 }
 
+.headerBox > .logo > a > img {
+  width: 252px;
+}
+
+.headerBox > .logo > .headerBox__hamburger {
+  display: none;
+  margin-left: auto;
+}
+
+.headerBox > .logo > .headerBox__hamburger > button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .headerBox > nav {
-  height: 100%;
+  height: 66px;
 }
 
 .headerBox > nav > ul {
   display: flex;
-  left: 0;
   height: 100%;
 }
 
@@ -84,6 +104,8 @@ header {
 
 .headerBox > .headerBox__menu {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .headerBox > .headerBox__menu > a {
@@ -117,7 +139,70 @@ header {
 }
 
 @media screen and (min-width: 0px) and (max-width: 1100px) {
-  body {
-    background-color: red;
+  .headerBox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headerBox > nav,
+  .headerBox > .headerBox__menu {
+    display: none;
+  }
+  .headerBox > .logo {
+    width: 100%;
+  }
+  .headerBox > .logo > .headerBox__hamburger {
+    display: block;
+  }
+
+  .headerBox > nav {
+    height: auto;
+  }
+
+  .headerBox > nav > ul {
+    flex-direction: column;
+  }
+
+  .headerBox > nav > ul > li {
+    padding: 15px;
+  }
+
+  .headerBox > nav > ul > li > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerBox > nav > ul > li > div > button {
+    text-align: left;
+  }
+
+  .headerBox > nav > ul > li > div > ul {
+    display: none;
+    box-shadow: none;
+    position: relative;
+    top: 0px;
+    padding-top: 15px;
+  }
+
+  .headerBox > .headerBox__menu {
+    width: 100%;
+    margin-left: 0;
+    margin: 0px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f3f8fb;
+  }
+
+  .headerBox > .headerBox__menu > span {
+    display: none;
+  }
+
+  .headerBox > .headerBox__menu > a {
+    padding-left: 15px;
+  }
+  /* effect */
+  .h_underbar:hover {
+    border-bottom: none;
+    border-left: 4px solid rgb(249, 181, 21);
   }
 }
