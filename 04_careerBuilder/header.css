@@ -3,6 +3,7 @@ header {
   width: 100%;
   color: #5d677a;
   box-shadow: 0 2px 20px rgb(46 46 46 / 10%);
+  background-color: white;
 }
 
 .headerBox {
