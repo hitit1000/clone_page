@@ -265,6 +265,7 @@ a {
   align-items: center;
   text-align: center;
   padding: 65px 0px;
+  width: 100%;
 }
 
 .section3 > .upper > .title {
@@ -429,5 +430,10 @@ a {
 
   .section3 > .middle {
     overflow: auto;
+    margin-bottom: 26px;
+  }
+
+  .section3 > .middle > .links > a > img {
+    margin: 0px 20px;
   }
 }
