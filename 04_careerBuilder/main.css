@@ -258,6 +258,64 @@ a {
   text-decoration-thickness: 2px;
 }
 
+/* section3 */
+.section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 65px 0px;
+}
+
+.section3 > .upper > .title {
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #5d677a;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.section3 > .upper > h2 {
+  font-size: 30px;
+  color: #182642;
+  margin-bottom: 30px;
+}
+
+.section3 > .middle {
+  max-width: 1440px;
+  width: 100%;
+  height: 90px;
+  padding: 0px 15px 20px;
+}
+
+.section3 > .middle > .links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+.section3 > .under > a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2777b4;
+}
+
+.section3 > .under > a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+}
+
+.section3 > .under > sup {
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px;
+  color: #d12c27;
+  border: 1px solid #d12c27;
+  border-radius: 3px;
+  vertical-align: 12px;
+}
+
 /* media */
 @media screen and (min-width: 0px) and (max-width: 1000px) {
   /* section1 */
@@ -325,6 +383,9 @@ a {
   }
 
   /* section2 */
+  .section2 {
+    padding: 50px 0px;
+  }
   .section2 > .upper > span {
     font-size: 11px;
   }
@@ -336,6 +397,7 @@ a {
 
   .section2 > .middle {
     flex-direction: column;
+    padding-bottom: 0;
   }
 
   .section2 > .middle > .content {
@@ -352,5 +414,20 @@ a {
   .section2 > .middle > .content > a > .textBox > .text3 {
     display: block;
     white-space: inherit;
+  }
+
+  /* section3 */
+  .section3 {
+    padding: 50px 0px;
+  }
+  .section3 > .upper > .title {
+    font-size: 10px;
+  }
+  .section3 > .upper > h2 {
+    font-size: 19px;
+  }
+
+  .section3 > .middle {
+    overflow: auto;
   }
 }
