@@ -6,6 +6,14 @@ a {
   text-decoration: none;
 }
 
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
 /* section1 */
 .section1 {
   background-image: url(./images/section1_background.jpg);
@@ -317,6 +325,67 @@ a {
   vertical-align: 12px;
 }
 
+.section4 {
+  padding: 65px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section4 > .upper > .title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.section4 > .under {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section4 > .under > .contents {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0px 15px;
+}
+.section4 > .under > .contents > .content {
+  max-width: 260px;
+  width: 100%;
+}
+
+.section4 > .under > .contents > .content > h2 {
+  font-size: 19px;
+  padding-bottom: 10px;
+  color: #182642;
+}
+
+.section4 > .under > .contents > .content > ul > li {
+  list-style: none;
+}
+
+.section4 > .under > .contents > .content > ul > li:nth-child(n + 6) {
+  display: none;
+}
+
+.section4 > .under > .contents > .content > ul > li > a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+
+.section4 > .under > .contents > .content > button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  color: #2e2e2e;
+  padding-top: 10px;
+}
+
 /* media */
 @media screen and (min-width: 0px) and (max-width: 1000px) {
   /* section1 */
@@ -435,5 +504,22 @@ a {
 
   .section3 > .middle > .links > a > img {
     margin: 0px 20px;
+  }
+
+  /* section4 */
+  .section4 {
+    padding: 50px 0px;
+  }
+  .section4 > .upper > .title {
+    font-size: 19px;
+  }
+  .section4 > .under {
+    padding-top: 0px;
+  }
+  .section4 > .under > .contents {
+    flex-direction: column;
+  }
+  .section4 > .under > .contents > .content {
+    padding-top: 30px;
   }
 }
