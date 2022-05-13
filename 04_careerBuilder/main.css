@@ -386,6 +386,76 @@ a {
   padding-top: 10px;
 }
 
+/* section5 */
+.section5 {
+  padding: 65px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section5 > .upper > .title {
+  color: #5d677a;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.section5 > .upper > h2 {
+  color: #182642;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.section5 > .under {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0px 15px;
+}
+
+.section5 > .under > .contents {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+.section5 > .under > .contents > .content {
+  max-width: 440px;
+  padding: 0px 40px 0px;
+  width: 35%;
+}
+
+.section5 > .under > .contents > .content > .imgBox {
+  padding-bottom: 20px;
+}
+
+.section5 > .under > .contents > .content > .textBox > h3 {
+  color: #182642;
+  font-size: 19px;
+  padding-bottom: 10px;
+}
+
+.section5 > .under > .contents > .content > .textBox > p {
+  color: #5d677a;
+  font-size: 16px;
+  padding-bottom: 10px;
+  letter-spacing: 0px;
+  word-spacing: 2px;
+}
+
+.section5 > .under > .contents > .content > .textBox > a {
+  color: #2777b4;
+  font-size: 14px;
+  font-weight: bold;
+}
+.section5 > .under > .contents > .content > .textBox > a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+}
+
 /* media */
 @media screen and (min-width: 0px) and (max-width: 1000px) {
   /* section1 */
@@ -521,5 +591,40 @@ a {
   }
   .section4 > .under > .contents > .content {
     padding-top: 30px;
+  }
+
+  /* section5 */
+  .section5 {
+    padding: 50px 0px;
+  }
+
+  .section5 > .upper > .title {
+    font-size: 10px;
+  }
+  .section5 > .upper > h2 {
+    font-size: 19px;
+  }
+
+  .section5 > .under > .contents {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .section5 > .under > .contents > .content {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px 0px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .section5 > .under > .contents > .content > .imgBox {
+    width: 20%;
+  }
+  .section5 > .under > .contents > .content > .imgBox > img {
+    width: 50px;
+  }
+  .section5 > .under > .contents > .content > .textBox {
+    width: 80%;
   }
 }
