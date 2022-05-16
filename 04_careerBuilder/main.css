@@ -29,6 +29,18 @@ a {
   margin-bottom: 30px;
 }
 
+.viewMore {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2777b4;
+}
+
+.viewMore:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+}
+
 /* section1 */
 .section1 {
   background-image: url(./images/section1_background.jpg);
@@ -553,6 +565,83 @@ a {
 .section6 > .under > .right > .downloads > a:hover {
   border-color: #5d99c6;
 }
+
+/* section7 */
+
+.section7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 65px 0px;
+}
+
+.section7 > .middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section7 > .middle > .contents {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0px 15px 30px;
+}
+
+.section7 > .middle > .contents > .content {
+  max-width: 432px;
+  width: 30%;
+  height: 240px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition-duration: 0.3s;
+}
+
+.section7 > .middle > .contents > .content:hover {
+  border-color: #014798;
+}
+
+.section7 > .middle > .contents > .content:hover .viewMore {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+}
+
+.section7 > .middle > .contents > .content > a {
+  width: 100%;
+  position: relative;
+}
+
+.section7 > .middle > .contents > .content > a > .imgBox {
+  width: 100%;
+  height: 100%;
+}
+.section7 > .middle > .contents > .content > a > .imgBox > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.section7 > .middle > .contents > .content > a > .textBox {
+  padding: 15px 50px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.section7 > .middle > .contents > .content > a > .textBox > h3 {
+  color: #182642;
+  font-size: 19px;
+  margin-bottom: 6.5px;
+  text-align: center;
+}
+
 /* media */
 @media screen and (min-width: 0px) and (max-width: 1000px) {
   .subTitle {
@@ -776,5 +865,19 @@ a {
   }
   .section6 > .under > .right > .contents > .content > .textBox > h3 {
     padding-bottom: 10px;
+  }
+
+  /* section7 */
+
+  .section7 {
+    padding: 50px 0px;
+  }
+
+  .section7 > .middle > .contents {
+    overflow: scroll;
+  }
+  .section7 > .middle > .contents > .content {
+    min-width: 280px;
+    width: 280px;
   }
 }
