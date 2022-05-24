@@ -40,6 +40,18 @@ header {
       }
     }
   }
+  .menu {
+    margin-right: 1px;
+    display: none;
+    padding: 5px;
+    .imgBox {
+      width: 30px;
+      height: 30px;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -61,6 +73,13 @@ header {
     nav {
       ul {
         display: none;
+      }
+    }
+    .menu {
+      display: block;
+      &:hover {
+        margin-right: 0px;
+        border: 1px solid #0f3d5d;
       }
     }
   }
